@@ -10,6 +10,24 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit some common Lineage stuff
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+RISING_MAINTAINER := AtharvaSwamy
+RISING_CHIPSET := SD675
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_GCAM := true
+WITH_GMS := false
+TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_INCLUDES_MIUI_CAMERA := true
+
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
 PRODUCT_DEVICE := violet
