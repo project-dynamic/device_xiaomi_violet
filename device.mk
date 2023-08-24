@@ -461,3 +461,6 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor
+
+# Inherit Viper4Android
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
