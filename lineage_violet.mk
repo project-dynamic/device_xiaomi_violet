@@ -18,6 +18,9 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 # Inherit some common device props
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
